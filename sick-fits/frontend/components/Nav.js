@@ -5,10 +5,6 @@ import NavStyles from "./styles/NavStyles";
 export default function Nav() {
   return (
     <NavStyles>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-
       <Link href="/items">
         <a>Items</a>
       </Link>
