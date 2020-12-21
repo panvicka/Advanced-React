@@ -1,14 +1,14 @@
-type User {
-  id: ID!
-  name: String!
-}
+# import * from './generated/prisma.graphql'
 
+
+# this is the public facing API 
 
 type Mutation {
-hi: String!
+
+createItem(title:String, description: String, price: Int, image: String, largeImage: String): Item!
+
 }
 
 type Query {
-hi: String!
+  items: [Item]!
 }
-
